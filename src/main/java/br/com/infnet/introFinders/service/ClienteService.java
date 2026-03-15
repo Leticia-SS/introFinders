@@ -15,9 +15,9 @@ public class ClienteService {
         return clienteRepository.findAll();
     }
 
-    public List<Cliente> buscarClienteAtivos(){
-        buscarPorStatus(StatusCliente.ATIVO);
-    }
+    //public List<Cliente> buscarClienteAtivos(){
+    //    buscarPorStatus(StatusCliente.ATIVO);
+    //}
 
     private void buscarPorStatus(StatusCliente status) {
 
