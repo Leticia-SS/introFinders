@@ -22,7 +22,7 @@ public interface PedidoRepository extends JpaRepository<Pedido, Long> {
 
 
     @Query("""
-            select count(p.id) form Pedido p where p.status = :status
+            select count(p.id) from Pedido p where p.status = :status
             """)
     Long contarPorStatus(@Param("status")StatusCliente status);
 
